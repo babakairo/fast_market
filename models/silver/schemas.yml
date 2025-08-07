@@ -1,0 +1,15 @@
+# models/silver/schemas.yml
+version: 2
+
+models:
+  - name: s_eaf_ratio_clean
+    description: "Cleaned EAF ratio data from OEalldata, used for BOF/EAF split and raw material demand"
+    columns:
+      - name: country
+        description: "Country or region name"
+      - name: year
+        description: "Year of observation"
+      - name: eaf_ratio_pct
+        description: "EAF ratio as percentage (0-100)"
+      - name: eaf_ratio
+        description: "EAF ratio as decimal (0.0-1.0), for calculations"

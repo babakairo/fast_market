@@ -1,0 +1,21 @@
+# models/schema.yml
+version: 2
+
+models:
+  - name: s_oealldata_clean
+    description: "Cleaned and unpivoted OEalldata, with #REF! and errors removed"
+    columns:
+      - name: country
+        description: "Country or region name"
+      - name: indicator
+        description: "Economic indicator (e.g., Production index)"
+      - name: year
+        description: "Year of observation (2003–2033)"
+      - name: value
+        description: "Indicator value"
+
+  - name: fct_crude_steel_forecast
+    description: "Final crude steel forecast with manual overrides"
+    columns:
+      - name: crude_steel_tons_thousands
+        description: "Forecasted crude steel production in thousands of tonnes"
