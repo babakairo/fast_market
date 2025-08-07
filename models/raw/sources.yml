@@ -1,0 +1,111 @@
+# models/raw/sources.yml
+version: 2
+
+sources:
+  - name: raw
+    database: FAST_MARKETS
+    schema: RAW
+    description: Raw ingestion from Excel files
+    tables:
+      - name: OEALLDATA
+        description: Direct import of 'OEalldata' sheet
+        columns:
+          - name: "Location"
+            description: Country or region name
+          - name: "Indicator"
+            description: Economic indicator (e.g., Production index)
+          - name: "1995"
+            description: Indicator value for 1995
+          - name: "1996"
+            description: Indicator value for 1996
+          - name: "1997"
+            description: Indicator value for 1997 
+          - name: "1998"
+            description: Indicator value for 1998
+          - name: "1999"
+            description: Indicator value for 1999
+          - name: "2000"
+            description: Indicator value for 2000
+          - name: "2001"
+            description: Indicator value for 2001
+          - name: "2002"
+            description: Indicator value for 2002
+          - name: "2003"
+            description: Indicator value for 2003
+          - name: "2004"
+            description: Indicator value for 2004
+          - name: "2005"
+            description: Indicator value for 2005
+          - name: "2006"
+            description: Indicator value for 2006
+          - name: "2007"
+            description: Indicator value for 2007
+          - name: "2008"
+            description: Indicator value for 2008
+          - name: "2009"
+            description: Indicator value for 2009
+          - name: "2010"
+            description: Indicator value for 2010
+          - name: "2011"
+            description: Indicator value for 2011
+          - name: "2012"
+            description: Indicator value for 2012
+          - name: "2013"
+            description: Indicator value for 2013
+          - name: "2014"
+            description: Indicator value for 2014
+          - name: "2015"
+            description: Indicator value for 2015
+          - name: "2016"
+            description: Indicator value for 2016
+          - name: "2017"
+            description: Indicator value for 2017
+          - name: "2018"
+            description: Indicator value for 2018
+          - name: "2019"
+            description: Indicator value for 2019
+          - name: "2020"
+            description: Indicator value for 2020
+          - name: "2021"
+            description: Indicator value for 2021
+          - name: "2022"
+            description: Indicator value for 2022
+          - name: "2023"
+            description: Indicator value for 2023
+          - name: "2024"
+            description: Indicator value for 2024
+          - name: "2025"
+            description: Indicator value for 2025
+          - name: "2026"
+            description: Indicator value for 2026
+          - name: "2027"
+            description: Indicator value for 2027
+          - name: "2028"
+            description: Indicator value for 2028
+          - name: "2029"
+            description: Indicator value for 2029
+          - name: "2030"
+            description: Indicator value for 2030
+          - name: "2031"
+            description: Indicator value for 2031
+          - name: "2032"
+            description: Indicator value for 2032
+          - name: "2033"
+            description: Indicator value for 2033
+      
+
+      - name: OEUSED
+        description: Indicator selection and regression params per country
+        columns:
+          - name: "Location"
+            description: Country name
+          - name: "Indicator used"
+            description: Primary OE indicator used for this country
+          - name: "Best correlation"
+            description: Correlation with steel output
+          - name: "Slope"
+            description: Regression slope
+          - name: "Intercept"
+            description: Regression intercept
+          - name: "SWIP"
+            description: Flag if SWIP index is used
