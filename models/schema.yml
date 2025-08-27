@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: s_oealldata_clean
+  - name: stg_oe_oealldata
     description: "Cleaned and unpivoted OEalldata, with #REF! and errors removed"
     columns:
       - name: country

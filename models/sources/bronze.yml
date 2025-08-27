@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: fastmarket
+    schema: bronze
+    tables:
+      - name: raw_oe_alldata
+      - name: raw_oe_selected
+      - name: raw_oe_used
+      - name: raw_oe_monthly
+      - name: raw_wsainternal
